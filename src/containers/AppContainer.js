@@ -15,10 +15,10 @@ class AppContainer extends Component {
     renderContent(){
       const { data, type } = this.props.form;
       if(type === types.CONTAINS_DATA_LOADED){
-        if(data.found){
-          return (<span>Text found</span>)
+        if(data.exists){
+          return (<span>Text exists</span>)
         } else {
-          return (<span>Text not found</span>)
+          return (<span>Text does not exist</span>)
         }
         
       }

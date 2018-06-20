@@ -109,19 +109,19 @@ func Contains(w http.ResponseWriter, req *http.Request) {
 		log.Fatal(err)
 	}
 
-	found := false
+	exists := false
 	doc.Find(tag).Each(func(i int, s *goquery.Selection) {
 
-		// For each tag found, compare the innderText with text
+		// For each tag exists, compare the innderText with text
 		t := s.Text()
-		found = strings.Contains(text, t)
-		if found {
+		exists = strings.Contains(text, t)
+		if exists {
 			return
 		}
 
 	})
 	res := make(map[string]bool)
-	res["found"] = found
+	res["exists"] = exists
 	e := json.NewEncoder(w).Encode(res)
 	if e != nil {
 		log.Fatal(err)
