@@ -3,7 +3,7 @@ Please follow the instruction below to run the application:
 1. clone the repo
 2. cd cobalt/server and run: 'go run main.go'
 3. cd cobalt and run 'npm install' 
-3  cd cobalt and run 'npm start'
+4. cd cobalt and run 'npm start'
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
