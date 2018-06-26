@@ -1,4 +1,4 @@
-Please follow the instruction below run the application:
+Please follow the instruction below to run the application:
 
 1. clone the repo
 2. cd cobalt/server and run: 'go run main.go'
